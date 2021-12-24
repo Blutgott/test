@@ -8,7 +8,7 @@ begin
   result:='';
   Length_s:=Length(s);
   if Length_s>1 then begin
-     result:=LeftStr(s,Length_s-1);
+     result:=LeftStr(s,Length_s-2);
   end;
 end;
 var s:string;
