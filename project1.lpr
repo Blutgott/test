@@ -1,5 +1,5 @@
 program L7;
-uses SysUtils;
+uses SysUtils, unit1;
 const CRLF=#13#10;
 function Chomp(s: string): string;
 var
@@ -14,7 +14,7 @@ end;
 var s:string;
 begin
   s:='simple string' +#13;
-  writeLn('',Chomp(s));
+  writeLn('string without line feed: ',Chomp(s));
   readln
 end.
 
